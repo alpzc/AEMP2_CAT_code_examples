@@ -4,6 +4,7 @@ import os, json
 import pandas as pd
 load_dotenv(find_dotenv())
 
+# MUST BE 14 DAYS IN THE PAST AT MOST
 START_DATE_UTC = "2024-10-01T12:00:00Z"
 END_DATE_UTC = "2024-10-02T12:00:00Z"
 

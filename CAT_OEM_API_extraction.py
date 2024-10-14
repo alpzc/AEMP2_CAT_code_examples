@@ -3,6 +3,7 @@ from dotenv import load_dotenv, find_dotenv
 import os, json
 import pandas as pd
 load_dotenv(find_dotenv())
+
 START_DATE_UTC = "2024-10-01T12:00:00Z"
 END_DATE_UTC = "2024-10-02T12:00:00Z"
 
@@ -162,7 +163,7 @@ def extractEquipmentTimeSeries(base_url:str, token:str, make:str, model:str, ser
 
 #AUTENTICACION
 printSeparator("OBTENIENDO TOKEN")
-token = getAccessToken(os.getenv('MX_client_id'), os.getenv('MX_client_secret'))
+token = getAccessToken(os.getenv('CLIENT_ID'), os.getenv('CLIENT_SECRET'))
 
 printSeparator("OBTENIENDO LISTA DE EQUIPOS")
 equipment_list = extractEquipmentList(token)

@@ -7,6 +7,7 @@ load_dotenv(find_dotenv())
 START_DATE_UTC = "2024-10-01T12:00:00Z"
 END_DATE_UTC = "2024-10-02T12:00:00Z"
 
+# ENDPOINTS GOTTEN FROM PUBLIC CAT API DOCUMENTATION AT https://digital.cat.com/knowledge-hub/articles/iso-15143-3-aemp-20-api-developer-guide#iso-15143-3-aemp-20-api-developer-guide
 TOKEN_URL = 'https://fedlogin.cat.com/as/token.oauth2'
 EQUIPMENT_URL = 'https://services.cat.com/telematics/iso15143/fleet/'
 SNAPSHOT_URL  = 'https://services.cat.com/telematics/iso15143/fleet/{{pageNumber}}'
